@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* when radio is checked → style the label */
+#btn1:checked + label {
+  background-color: red;
+  color: white;
+}
+
+#btn2:checked + label {
+  background-color: red;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <label for="btn1" class="btn">Button 1</label>
+    <input type="radio" name="group" id="btn1" hidden>
+    
+<input type="radio" name="group" id="btn2" hidden>
+<label for="btn2" class="btn">Button 2</label>
+</body>
+</html>

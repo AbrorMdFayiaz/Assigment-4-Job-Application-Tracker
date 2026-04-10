@@ -1,1 +1,24 @@
+* {
+  font-family: "Geist", sans-serif;
+}
+
+@media screen and (min-width: 350px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 576px) {
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* @media screen and (min-width: 350px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
+/* } */
+
 @import "tailwindcss"

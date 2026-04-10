@@ -28,6 +28,21 @@ function AllPortionShower (event){
             element.classList.remove("hidden")
         }
 
+
+
+        document.getElementById("all-section-button").classList.add("bg-info");
+        document.getElementById("all-section-button").classList.add("text-base-100");
+
+
+        document.getElementById("all-section-button").classList.remove("text-[#64748B]");
+
+        document.getElementById("interview-section-button").classList.remove("text-base-100");
+        document.getElementById("interview-section-button").classList.remove("bg-info");
+        document.getElementById("reject-section-button").classList.remove("text-base-100");
+        document.getElementById("reject-section-button").classList.remove("bg-info");
+
+
+
         sideCounter(lastPortionShower);
 }
 
@@ -68,6 +83,24 @@ function InterviewPortionShower (event){
         }
 
 
+
+
+
+
+        document.getElementById("interview-section-button").classList.add("bg-info");
+        document.getElementById("interview-section-button").classList.add("text-base-100");
+
+        document.getElementById("interview-section-button").classList.remove("text-[#64748B]");
+
+        document.getElementById("all-section-button").classList.remove("text-base-100");
+        document.getElementById("all-section-button").classList.remove("bg-info");
+        document.getElementById("reject-section-button").classList.remove("text-base-100");
+        document.getElementById("reject-section-button").classList.remove("bg-info");
+
+
+
+
+
         sideCounter(lastPortionShower);
 
 }
@@ -103,6 +136,27 @@ function RejectPortionShower (event){
                 element.classList.add("hidden");
             }
         }
+
+
+
+
+
+
+
+        document.getElementById("reject-section-button").classList.add("bg-info");
+        document.getElementById("reject-section-button").classList.add("text-base-100");
+
+        document.getElementById("reject-section-button").classList.remove("text-[#64748B]");
+
+        document.getElementById("all-section-button").classList.remove("text-base-100");
+        document.getElementById("all-section-button").classList.remove("bg-info");
+        document.getElementById("interview-section-button").classList.remove("text-base-100");
+        document.getElementById("interview-section-button").classList.remove("bg-info");
+
+
+
+
+
 
 
         sideCounter(lastPortionShower);

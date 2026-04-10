@@ -37,7 +37,9 @@ function interviewButtonAction (event){
         event.target.closest(".job-item").classList.remove("reject-chosen") ;
 
 
-        event.target.parentElement.parentElement.children[2].innerHTML="Interview";
+        event.target.parentElement.parentElement.children[2].innerText="INTERVIEW";
+        event.target.parentElement.parentElement.children[2].classList.add("bg-green-300/50");
+        event.target.parentElement.parentElement.children[2].classList.remove("bg-red-300/50");
         console.log(9789);
 
         updateInterviewCounter() ;
@@ -59,13 +61,14 @@ function interviewButtonAction (event){
         // event.target.parentElement.parentElement.closest(".job-item").remove();
         // event.target.parentElement.parentElement.parentElement.parentElement.classList.add("reject-chosen") ;
         event.target.closest(".job-item").classList.add("reject-chosen") ;
-        event.target.closest(".job-item").classList.remove
-        ("interview-chosen")
+        event.target.closest(".job-item").classList.remove("interview-chosen")
 
 
 
 
-        event.target.parentElement.parentElement.children[2].innerHTML="Rejected";
+        event.target.parentElement.parentElement.children[2].innerText="REJECTED";
+        event.target.parentElement.parentElement.children[2].classList.add("bg-red-300/50");
+        event.target.parentElement.parentElement.children[2].classList.remove("bg-green-300/50");
         console.log(99);
 
 
