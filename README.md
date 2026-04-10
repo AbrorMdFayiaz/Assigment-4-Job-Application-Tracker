@@ -24,4 +24,4 @@ It's useful as in this way we don't need to add event/event listeners to every c
 
 5.  The preventDefault() method prevents the browser's default behaviour (associated with that event) but the event propagation still works.
 
-The stopPropagation() method stops the event propagation but still the browser's default bahaviour(associated with that event) works.
+The stopPropagation() method stops the event propagation but still the browser's default bahaviour(associated with that event) works. 

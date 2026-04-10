@@ -67,7 +67,7 @@ function InterviewPortionShower (event){
 
 
         lastPortionShower = 2 ;
-        // 2 = inetrview section shower 
+        // 2 = interview section shower 
 
 
         let container = document.getElementById("all-section");
