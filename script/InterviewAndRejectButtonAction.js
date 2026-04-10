@@ -35,7 +35,9 @@ function interviewAndRejectButtonAction (event){
         // event.target.parentElement.parentElement.closest(".job-item").remove();
         // event.target.parentElement.parentElement.parentElement.parentElement.classList.add("interview-chosen") ;
         event.target.closest(".job-item").classList.add("interview-chosen") ;
+        event.target.closest(".job-item").classList.add("border-success","border-l-2","rounded-[15px]") ;
         event.target.closest(".job-item").classList.remove("reject-chosen") ;
+        event.target.closest(".job-item").classList.remove("border-error")
 
 
         event.target.parentElement.parentElement.children[2].innerText="INTERVIEW";
@@ -63,7 +65,10 @@ function interviewAndRejectButtonAction (event){
         // event.target.parentElement.parentElement.closest(".job-item").remove();
         // event.target.parentElement.parentElement.parentElement.parentElement.classList.add("reject-chosen") ;
         event.target.closest(".job-item").classList.add("reject-chosen") ;
+        event.target.closest(".job-item").classList.add("border-error","border-l-2","rounded-[15px]") ;
+
         event.target.closest(".job-item").classList.remove("interview-chosen")
+        event.target.closest(".job-item").classList.remove("border-success")
 
 
 
