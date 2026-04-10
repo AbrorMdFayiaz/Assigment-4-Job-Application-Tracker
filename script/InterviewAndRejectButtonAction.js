@@ -26,10 +26,11 @@
 // individual buttons ( interview , reject )
 
 
-document.getElementsByTagName("main")[0].addEventListener("click",interviewButtonAction)
+document.getElementsByTagName("main")[0].addEventListener("click",interviewAndRejectButtonAction)
 
 
-function interviewButtonAction (event){
+function interviewAndRejectButtonAction (event){
+    // interview part
     if(event.target.closest(".interview-button")){
         // event.target.parentElement.parentElement.closest(".job-item").remove();
         // event.target.parentElement.parentElement.parentElement.parentElement.classList.add("interview-chosen") ;
@@ -57,6 +58,7 @@ function interviewButtonAction (event){
             RejectPortionShower();
         }
     }
+    // reject part
      if(event.target.closest(".reject-button")){
         // event.target.parentElement.parentElement.closest(".job-item").remove();
         // event.target.parentElement.parentElement.parentElement.parentElement.classList.add("reject-chosen") ;
