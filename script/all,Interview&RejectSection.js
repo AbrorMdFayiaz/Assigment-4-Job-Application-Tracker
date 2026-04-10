@@ -161,3 +161,19 @@ function RejectPortionShower (event){
 
         sideCounter(lastPortionShower);
 }
+
+
+
+
+
+
+
+
+
+// calling the AllPortionShower() function at the starting of the page load for a single time , to make sure at the beginning the "all" portion is active and a blue background color is found on the "all" portion.
+
+let singleCounter=0;
+if(singleCounter===0){
+    AllPortionShower();
+    singleCounter++;
+}
